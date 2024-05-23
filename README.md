@@ -16,3 +16,9 @@
 
 <br/>
 We welcome everyone to follow and participate in the "AI-digital-art-works" project. Let's explore and create more wonderful digital artworks together!
+&nbsp;&nbsp;<img height="50" width="50" src="images/cute_smiley.png"/>
+
+<hr/>
+<img src="images/SV3D.png">
+
+https://www.youtube.com/watch?v=JucIXdRAFHw
