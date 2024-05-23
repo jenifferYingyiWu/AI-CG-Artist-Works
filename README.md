@@ -19,6 +19,8 @@ We welcome everyone to follow and participate in the "AI-digital-art-works" proj
 &nbsp;&nbsp;<img height="50" width="50" src="images/cute_smiley.png"/>
 
 <hr/>
-<img src="images/SV3D.png">
+<img src="images/Generative-Models-by-Stability-AI.png"/>
+<hr/>
+<img src="images/Stable-Diffusion-Version2.png"/>
 
 https://www.youtube.com/watch?v=JucIXdRAFHw
