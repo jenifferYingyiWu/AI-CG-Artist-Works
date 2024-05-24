@@ -88,25 +88,25 @@ Up to 70 finalists will be invited to join the Lumen Artist Community, unlocking
 
 ### Lumen Prize Guidelines:
 
-- **Artist Eligibility**: The Lumen Prize is open to all artists globally. Collaborative projects must list all contributors.
-- **Art Eligibility**: All art is eligible, as long as it engages with technology in some form and meets one of the five prize categories: Still Image, Moving Image, Interactive Immersive, Futures, and Impact.
-- **Category Selection**: Each entry is made to one of the five prize categories. If you are unsure of which category to enter after reviewing their descriptions, please email: prize@lumenstudios.art.
-- **Entry Count**: There is no limit on the number of entries you may submit.
-- **Multiple Category Entries**: You can enter the same work into multiple categories, so long as it meets the parameters of the category.
-- **Multiple Artwork Entries**: You can submit multiple works to the same category, so long as each work meets the parameters of the category. 
-- **Artwork Age**: There is no limit on the age of a submitted work.
-- **Equipment/Software**: Any equipment or software can be used.
-- **Entry Requirements**:
-A 250 word maximum artistic concept description
-Technical details including equipment/software used and dimensions, if applicable
-- **Submission Format**:
-Primary image/video representation of artwork
-Up to 3 additional supporting images
-Videos must be hosted on YouTube/Vimeo
-- **Judging Process**:
-The International Selectors Committee determines finalists
-The Jury Panel selects winners for each award/category
-Special Awards Consideration: Indicate your eligibility for the Kunstsilo, BCS, and Carla Rapoport Awards when entering a category. Eligibility guidelines are listed here.
-- **Entry Fee**: As a non-profit organization, we collect a modest entry fee to help defray the cost of administering the prize.
-- **Finalist Selection**: If you are selected as a Finalist, we will email you at the email address you provided in your entry in August. 
-- **Ongoing Communication**: Following your application, we may contact you to share relevant artist opportunities or updates from The Lumen Prize.
+- **Artist Eligibility**: The Lumen Prize is open to all artists globally. Collaborative projects must list all contributors. <hr/>
+- **Art Eligibility**: All art is eligible, as long as it engages with technology in some form and meets one of the five prize categories: Still Image, Moving Image, Interactive Immersive, Futures, and Impact.<hr/>
+- **Category Selection**: Each entry is made to one of the five prize categories. If you are unsure of which category to enter after reviewing their descriptions, please email: prize@lumenstudios.art.<hr/>
+- **Entry Count**: There is no limit on the number of entries you may submit.<hr/>
+- **Multiple Category Entries**: You can enter the same work into multiple categories, so long as it meets the parameters of the category.<hr/>
+- **Multiple Artwork Entries**: You can submit multiple works to the same category, so long as each work meets the parameters of the category.<hr/>
+- **Artwork Age**: There is no limit on the age of a submitted work.<hr/>
+- **Equipment/Software**: Any equipment or software can be used.<hr/>
+- **Entry Requirements**:<br/>
+A 250 word maximum artistic concept description<br/>
+Technical details including equipment/software used and dimensions, if applicable<hr/>
+- **Submission Format**:<br/>
+Primary image/video representation of artwork<br/>
+Up to 3 additional supporting images<br/>
+Videos must be hosted on YouTube/Vimeo<hr/>
+- **Judging Process**:<br/>
+The International Selectors Committee determines finalists<br/>
+The Jury Panel selects winners for each award/category<br/>
+Special Awards Consideration: Indicate your eligibility for the Kunstsilo, BCS, and Carla Rapoport Awards when entering a category. Eligibility guidelines are listed here.<hr/>
+- **Entry Fee**: As a non-profit organization, we collect a modest entry fee to help defray the cost of administering the prize.<hr/>
+- **Finalist Selection**: If you are selected as a Finalist, we will email you at the email address you provided in your entry in August.<hr/> 
+- **Ongoing Communication**: Following your application, we may contact you to share relevant artist opportunities or updates from The Lumen Prize.<hr/>
