@@ -23,4 +23,7 @@ We welcome everyone to follow and participate in the "AI-digital-art-works" proj
 <hr/>
 <img src="images/Stable-Diffusion-Version2.png"/>
 
-https://www.youtube.com/watch?v=JucIXdRAFHw
+<hr/>
+
+[![Watch the video](images/2024-open-call.png)](https://www.youtube.com/watch?v=jXj4IVmN_68)
+
