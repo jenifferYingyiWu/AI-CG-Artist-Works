@@ -1,12 +1,8 @@
 # Midjourney Bot
 
-- **/imagine prompt**  vibrant California poppies
-
-<img width="80%" height="80%" src="../images/MidJourney-vibrantCaliforniaPoppies.png">
-
-<hr/>
-
 - **/imagine prompt**  a terminator in a cartoon pop art style, funny, front headed, bright colors, simple lines. -- video -- stop 80
+
+<img width="80%" height="80%" src="../images/MJ-video.png">
 
 <hr/>
 
@@ -24,4 +20,4 @@
 
 - **/imagine prompt**  a girl on a beach in a cyberpunk world. She has red hair and green eyes. She is sitting and looking at the camera. The camera is three-quarters on the girl. lower angle. --ar 2:3 --niji
 
-<img width="80%" height="80%" src="../images/MidJourney-niji.png">
+<img width="80%" height="80%" src="../images/MJ-niji.png">
