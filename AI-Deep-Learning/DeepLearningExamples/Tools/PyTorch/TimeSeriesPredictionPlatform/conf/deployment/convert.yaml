@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: Apache-2.0
+_target_: inference.converter.run_converter
+defaults:
+    - export: ts-trace
+    - convert: torchscript
+config:
+    checkpoint: ???
+    batch_size: 64
+    precision: fp32
+    optimize: False
+    accelerator: none
+    gpu: 0

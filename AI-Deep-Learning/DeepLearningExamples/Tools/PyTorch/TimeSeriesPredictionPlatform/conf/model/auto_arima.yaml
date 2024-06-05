@@ -1,0 +1,22 @@
+# SPDX-License-Identifier: Apache-2.0
+_target_: models.stat_models.AutoARIMA
+config:
+    m: 1
+    start_p: 2
+    start_q: 2
+    max_p: 5
+    max_q: 5
+    max_d: 2
+    start_P: 1
+    start_Q: 1
+    max_P: 2
+    max_Q: 2
+    max_D: 1
+    information_criterion: aic
+    method: lbfgs
+    maxiter: 50
+
+
+defaults:
+    - _self_
+    - /trainer@_global_/trainer: stattrainer

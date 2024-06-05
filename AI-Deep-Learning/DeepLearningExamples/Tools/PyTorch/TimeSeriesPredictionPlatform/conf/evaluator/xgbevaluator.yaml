@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: Apache-2.0
+defaults:
+  - postprocessor:
+
+_target_: evaluators.evaluator.XGBMetricEvaluator
+config:
+    output_selector: 0
+    save_predictions: false
+    metrics:
+      - MSE
+      - MAE
+      - RMSE
+      - SMAPE
+    use_weights: False

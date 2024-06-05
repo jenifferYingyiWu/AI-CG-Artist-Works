@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: Apache-2.0
+defaults:
+        - overrides@_global_: quantile_overrides
+_target_: criterion.QuantileLoss

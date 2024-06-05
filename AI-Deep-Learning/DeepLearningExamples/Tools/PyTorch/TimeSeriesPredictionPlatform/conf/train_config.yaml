@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: Apache-2.0
+#
+# The order in this list matters a lot! An element in this list can only be modified by a subsequent one!
+defaults:
+  - model: ???
+  - dataset: electricity
+  - evaluator: ${if:${cmp:${oc.select:trainer, ctltrainer}, xgbtrainer}, xgbevaluator, ${if:${cmp:${oc.select:trainer, ctltrainer}, stattrainer}, statevaluator, ctlevaluator}}
+  - optional model_dataset@_global_: ${model}_${dataset}
+  - logger
+  - train_derived_fields
+  - optional overrides@_global_:  # Empty by default
+  - _self_
+
+seed: 1

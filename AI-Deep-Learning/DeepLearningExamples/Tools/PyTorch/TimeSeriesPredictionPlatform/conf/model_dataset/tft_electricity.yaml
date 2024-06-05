@@ -1,0 +1,29 @@
+# SPDX-License-Identifier: Apache-2.0
+model:
+  config:
+    n_head: 4
+    hidden_size: 128
+    dropout: 0.1
+    attn_dropout: 0.0
+    quantiles: [0.1, 0.5, 0.9]
+    output_selector: 1
+
+trainer:
+  config:
+    batch_size: 1024
+    num_epochs: 20
+    gradient_norm: 1.0
+  optimizer:
+    lr: .001
+  criterion:
+    _target_: criterion.QuantileLoss
+    quantiles: [0.1, 0.5, 0.9]
+
+evaluator:
+  postprocessor:
+    _target_: evaluators.evaluator.Postprocessor
+    transformations:
+      - _target_: conf.conf_utils.partial
+        func: numpy.clip
+        a_min: 0
+        a_max: .inf

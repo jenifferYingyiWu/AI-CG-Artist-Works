@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+_target_: inference.launch_inference_server.run_server_launch
+config:
+    gpu: 0
+    checkpoint: ???

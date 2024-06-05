@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+_target_: torch.optim.Rprop
+lr: 0.01
+etas: [0.5, 1.2]
+step_sizes: [1e-06, 50]

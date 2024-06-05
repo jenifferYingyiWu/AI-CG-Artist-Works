@@ -1,0 +1,15 @@
+# SPDX-License-Identifier: Apache-2.0
+defaults:
+  - postprocessor:
+
+_target_: evaluators.evaluator.CTLMetricEvaluator
+config:
+    batch_size: 1024
+    output_selector: 0
+    save_predictions: false
+    metrics:
+      - MAE
+      - RMSE
+      - SMAPE
+      - TDI
+      - ND

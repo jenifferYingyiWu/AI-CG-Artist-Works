@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+_target_: models.trivial_model.TrivialModel
+defaults:
+    - _self_
+    - /trainer@_global_/trainer: ctltrainer

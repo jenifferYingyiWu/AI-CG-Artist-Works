@@ -1,0 +1,2 @@
+merge_logs:
+    _target_: callbacks.hydra_callbacks.MergeLogs

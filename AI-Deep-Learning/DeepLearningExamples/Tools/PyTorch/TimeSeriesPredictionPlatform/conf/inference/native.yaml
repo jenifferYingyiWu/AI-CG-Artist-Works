@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: Apache-2.0
+_target_: inference.inference.run_inference
+config:
+    checkpoint: ???
+    batch_size: 64
+    precision: fp32
+    device: cuda

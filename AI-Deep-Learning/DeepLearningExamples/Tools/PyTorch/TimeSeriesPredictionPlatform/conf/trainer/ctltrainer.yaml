@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: Apache-2.0
+_target_: training.trainer.CTLTrainer
+defaults:
+    - callbacks: standard
+    - criterion: MSE
+    - optimizer: Adam
+    - optional scheduler: None
+
+config:
+    device: cuda
+    world_size: ${oc.env:WORLD_SIZE, 1} #This is present for a sole purpose of logging
+    batch_size: 32
+    num_workers: 3
+    num_epochs: 15
+    amp: False
+    ema: False
+    log_interval: 25
+    logfile_name: log.json
+    mlflow_store: ''

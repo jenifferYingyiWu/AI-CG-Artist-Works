@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: Apache-2.0
+_target_: training.trainer.XGBTrainer
+defaults:
+    - callbacks: standard
+
+config:
+    device: cuda
+    log_interval: 100

@@ -1,0 +1,7 @@
+trainer:
+    criterion:
+        quantiles: [0.1, 0.5, 0.9]
+model:
+    config:
+        quantiles: [0.1, 0.5, 0.9]
+        output_selector: 1

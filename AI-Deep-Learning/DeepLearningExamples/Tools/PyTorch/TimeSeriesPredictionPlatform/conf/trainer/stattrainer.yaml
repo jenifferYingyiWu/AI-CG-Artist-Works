@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: Apache-2.0
+_target_: training.trainer.StatTrainer
+
+config:
+  log_interval: 25
+  logfile_name: log.json
+  mlflow_store: ''
+  device: cpu

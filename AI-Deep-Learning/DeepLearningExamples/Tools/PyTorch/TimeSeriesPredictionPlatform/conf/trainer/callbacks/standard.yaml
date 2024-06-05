@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: Apache-2.0
+early_stopping:
+        _target_: callbacks.ctl_callbacks.EarlyStopping
+        metric: val_loss
+        min_delta: 0
+        patience: 5
+
+logging:
+        _target_: callbacks.ctl_callbacks.LoggingCallback
+
+save_best_checkpoint:
+        _target_: callbacks.ctl_callbacks.SaveBestCheckpoint
+        metric: val_loss
+
+save_checkpoint:
+        _target_: callbacks.ctl_callbacks.SaveCheckpoint
+
+throughput_benchmark:
+        _target_: callbacks.ctl_callbacks.ThroughputBenchmark
+        warmup_epochs: 0

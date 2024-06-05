@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: Apache-2.0
+_target_: models.tspp_xgboost.TSPPDaskXGBoost
+config:
+  max_depth: 10
+  learning_rate: 0.2
+  subsample: 1.0
+  colsample_bytree: 0.8
+  tree_method: gpu_hist
+  n_rounds: 400
+  objective: reg:squarederror
+  cluster:
+    world_size: 1
+    device_pool_frac: 0.9
+    protocol: tcp
+    npartitions: 4
+defaults:
+    - _self_
+    - /trainer@_global_/trainer: xgbtrainer

@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+_target_: callbacks.ctl_callbacks.EarlyStopping
+metric: val_loss
+min_delta: 0
+patience: 5

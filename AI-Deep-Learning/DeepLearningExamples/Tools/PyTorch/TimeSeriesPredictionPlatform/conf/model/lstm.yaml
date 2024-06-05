@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: Apache-2.0
+_target_: models.lstm.LSTM
+config:
+    hidden_size: 128
+    dropout: 0.1
+    missing_data_strategy: 'mask'
+defaults:
+    - _self_
+    - /trainer@_global_/trainer: ctltrainer
