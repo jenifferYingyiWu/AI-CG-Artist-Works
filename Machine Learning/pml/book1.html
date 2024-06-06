@@ -1,0 +1,286 @@
+<h1>Probabilistic Machine Learning: An Introduction</h1>
+by <a href="https://www.cs.ubc.ca/~murphyk/">Kevin Patrick Murphy</a>.
+<br>
+	MIT Press, March  2022.
+	
+<p>
+<img src="cover1.jpg"
+     alt="Book cover"
+     style="height:200;">
+<p>
+	
+	
+<h2>Key links</h2>
+
+<ul>
+
+	<li> 	 <a href="#toc">Short table of contents</a>
+		 
+  <li> <a href="toc1.pdf">Long table of  contents</a>
+
+  <li> <a href="preface1.pdf">Preface</a>
+
+  <li> <a href="https://github.com/probml/pml-book/releases/latest/download/book1.pdf">
+    Draft pdf file</a>, 2023-06-21.  CC-BY-NC-ND license. (Please cite the official reference below.)
+	
+	<li> <a href="https://github.com/probml/pml-book/issues">Report issues here</a>
+		
+	  <li> Order a hardcopy from <a href="https://mitpress.mit.edu/books/probabilistic-machine-learning">MIT Press</a>
+		  or
+		  <a href="https://www.amazon.com/Probabilistic-Machine-Learning-Introduction-Computation/dp/0262046822">Amazon</a>..
+	  
+	<li> <a href="https://github.com/probml/pml-book/tree/main/book1-figures">Figures from the book</a> (png files)
+		
+	<li> <a href="https://github.com/probml/pyprobml/tree/master/notebooks/book1">
+	    Code to reproduce most of the figures</a> 
+      
+		
+<li> <a href="https://github.com/probml/pml-book/blob/main/transition-guide-2012-to-2022.pdf">Diff from 2012 book</a>
+				
+
+<li> <a href="solns-public.pdf">Solutions to (non-starred) exercises
+
+    <li> <a href="teaching1.html">Other teaching resources</a>
+			
+	  
+	<!-- <li><a href="https://groups.google.com/u/1/g/probml-book/">Mailing list for major announcements</a> (Low traffic) -->
+	  
+	  
+		<li> <a href="#reviews">Reviews</a>
+			
+	<li> <a href="#endorsements">Endorsements</a>
+		
+<li> <a href="#ack">Acknowledgements</a>
+	
+</ul>
+
+If you use this book, please be sure to cite
+<pre><code>
+ @book{pml1Book,
+ author = "Kevin P. Murphy",
+ title = "Probabilistic Machine Learning: An introduction",
+ publisher = "MIT Press",
+ year = 2022,
+ url = "probml.ai"
+}
+</code></pre>
+
+
+<p> Downloads since 2021-01-01.
+  <img src="https://img.shields.io/github/downloads/probml/pml-book/total"
+       alt="download stats shield">
+  
+<h2><a id="toc">Table of contents</h2>
+
+    <img src="toc1-short.png"
+     alt="TOC 2021-07-20"
+     style="height:700;">
+
+
+<h2><a id="code">Code accompanying the book</h2>
+
+	Code to recreate all the figures can be found in a series of colabs, one per chapter,
+stored  <a href="https://github.com/probml/pyprobml/tree/master/notebooks/book1">
+  here</a>.
+When reading the pdf version of the book, you can  click on any link labeled <b>figures.probml.ai/x.y</b> and it will open up the  colab for chapter x;
+	the cursor should  scroll down to the cell for figure y. 
+	Once you get there, 
+	click on the button labeled 'setup' and it will install any necessary code.
+(The first time you do this it may take about 10 seconds, but subsequent setups for other cells in the same chapter should be faster,
+	even if they open in a new tab.)
+	After setup, click on the following cell and it will  run the code for you.
+	(It should automagically install any missing packages as well, although you may need to run the cell twice to make this work.)
+	
+	<p>
+	  The code for most figures is stored in individual files in the 
+	  <a href="https://github.com/probml/pyprobml/tree/master/deprecated/scripts">scripts</a> directory.
+	  You can run these locally (on your laptop), but it's often faster to run in colab (especially for demos that use a GPU).
+		To do this, just type `%run foo.py`. You can also edit the file in colab, and then rerun it. 
+Note, however, that  changes to local files will not be saved beyond the current colab session.
+(A better, but more complex, approach is to use VScode to ssh into the colab machine,
+		see <a href="https://github.com/probml/pyprobml/blob/master/notebooks/tutorials/colab_gcp_tpu_tutorial.md">this page
+		</a> for details.)
+		
+	<p>
+There are also some inline links to code in the body of the book, labeled <b>code.probml.ai/foo</b>; these refer to 
+demos that are not associated with any figure. Clicking on these links behaves in a similar way to the figure code (opening a tab for the appropriate
+		colab cell).
+In addition to the above, many chapters have supplementary code / material (for example, 
+		<a href="https://github.com/probml/pyprobml/tree/master/notebooks/book1/11/supplementary">here</a>).
+		These will continue to be updated even after the book is published (contributions welcome!).
+
+		
+		<p>
+	<h2><a id="reviews"></a>Reviews</h2>
+	
+	<ul>
+		<li> <a href="https://aleksander-molak.medium.com/three-amazing-data-science-books-to-read-in-2023-if-you-wont-manage-in-2022-f35827cbbb1d">
+			Review by Aleksander Molak</a>, 2022-02-03. 
+			"I love Murphy’s style of writing and I find it clear and appealing even when he discusses complex topics"
+			
+	</ul>
+	
+  
+<p>
+<h2><a id="endorsements"></a>Endorsements</h2>
+
+<ul>
+
+ 
+
+
+  <p>
+	  <li>
+		  "The deep learning revolution has transformed the field of machine learning over the last decade.
+		  It was inspired by attempts to mimic the way the brain learns but it is grounded in basic principles of statistics, 
+		  information theory,
+decision theory and optimization. This book does an excellent job of explaining these principles and describes many of the "classical"
+		  machine learning methods that make use of them. It also shows how the same principles can be applied in deep learning systems 
+		  that contain many layers of features. 
+		  This provides a coherent framework in which one can understand the relationships and tradeoffs between many different ML approaches,
+		  both old and new." -- <a href="https://www.cs.toronto.edu/~hinton/">Geoff Hinton</a>. U. Toronto/ Google.
+		  <p>
+			  
+    <li>
+      "Kevin Murphy’s book on machine learning is a superbly written,
+      comprehensive treatment of the field, built on a foundation of probability theory.
+      It is rigorous yet readily accessible, and
+      is a must-have for anyone interested in gaining a deep understanding of machine learning."
+	    -- <a href="https://www.microsoft.com/en-us/research/people/cmbishop/">Chris Bishop</a>,
+	Microsoft Research.
+	    
+	    <p>
+		    <li>
+	    "This book is a clear, concise, and rigorous introduction to the foundations of machine learning. 
+	    It beautifully bridges between the "traditional" topics and the more "modern" deep learning methods, 
+	    creating a unifying framework that contextualizes both of them. It's the book I recommend for people who are new to the 
+	    field and want to obtain a comprehensive view of the core principles and methods."
+			    -- <a href="https://ai.stanford.edu/~koller/">Daphne Koller</a>, Insitro/ Stanford.
+
+
+<p>
+	<li>
+		"This is a remarkable book covering the conceptual,
+		theoretical and computational foundations of probabilistic machine learning, 
+		starting with the basics and moving seamlessly to the leading edge of this field.  
+		The pedagogical structure of the book is extremely useful for teaching. One of my favorite parts is
+		that most of the figures  of the book have a link to the associated 
+		(python, JAX, tensorflow) code that is used to generate them,
+		often with comparisons between the different computational ways of solving the problems."
+		-- <a href="https://www.seas.harvard.edu/brenner/Home.html">Michael Brenner</a>, Harvard/ Google.
+		
+	  <p>
+		  <li>
+	  "This book could be titled 'What every ML PhD student should know'. 
+	  If you master the material in this book, you will have an outstanding foundation for successful research in machine learning.”
+			  -- <a href="http://web.engr.oregonstate.edu/~tgd/">Tom Dietterich</a>, Oregon State U.
+			  
+			  <p>
+			  <li>
+"This book delivers a wonderful exposition of modern and traditional machine learning approaches through the language and lens of probabilistic reasoning. 
+				  As such, it provides extremely valuable and much needed coherence, generalisation, and mathematical rigour, 
+				  allowing the reader to gain a deep understanding of the interconnectivities between many different areas of data science, 
+				  and so deliver more effective outcomes.
+				  I highly recommend this second edition"
+				  -- <a href="https://www.turing.ac.uk/people/researchers/mark-briers">Mark Briers</a>, Alan Turing Institute.
+
+    <p>
+    <li> "There are many books on machine learning out there, but none gives
+    such a well-rounded, up-to-date, and comprehensive view of the
+    field as this one. We use this book as reference reading for our
+    students taking the advanced machine learning course at Oxford to
+    introduce them to fundamental as well as current topics in the
+    field. I'm amazed at the amount of work that went into this
+    book---which will surely be used by many to train the next
+      generation of machine learning experts."
+      -- <a href="http://www.cs.ox.ac.uk/people/yarin.gal/website/">Yarin    Gal</a>, U. Oxford
+
+	    
+	  <p>
+	    <li>
+	      "This is a terrific resource for machine learning students and researchers.
+		    If you want to understand the foundations of modern machine learning then this is the book to read. 
+		    The text is particularly strong at marrying classical ideas from statistics and probability with more modern concepts such as deep learning."
+	      -- <a href="https://www.ics.uci.edu/~smyth/">Padhraic Smyth</a>, UC Irvine
+		    
+		          <p>
+  <li> "My favorite machine learning book just received a face-lift!
+    'Probabilistic Machine Learning: An Introduction' is the most
+    comprehensive and accessible book on modern machine learning by a
+    large margin.  
+    It now also covers the latest developments in deep learning and
+    causal discovery. With this upgrade it will remain the reference
+    book for our field that every respected researcher needs to have
+    on their desk."  -- <a href="https://staff.fnwi.uva.nl/m.welling/">Max Welling</a>,
+    U. Amsterdam 
+	 
+		    
+      <p>
+	<li>
+	  "Prof Murphy's 2012 book was a triumph, covering both basic material
+and also the state-of-the-art. The new 'Probabilistic Machine
+Learning: An Introduction' is similarly excellent, and includes new
+material, especially on deep learning and recent developments.  It
+will become an essential reference for students and researchers in
+	  probabilistic machine learning."
+	  -- <a href="https://homepages.inf.ed.ac.uk/ckiw/">Chris Williams</a>, U. Edinburgh
+
+		<o>
+			"This book provides the
+essential foundations for both research and practice in modern
+scalable machine learning.  It unifies and simplifies many of the most
+important methods, giving its readers the insight to understand them
+			and the tools to expand them." -- <a href="http://www.cs.columbia.edu/~blei/">David Blei</a>, Columbia U.
+		
+	  <p>
+		  <li> "The book is really good."
+			  -- <a href="https://www.is.mpg.de/~bs">Bernhard Scholkopf</a>, U. Tuebingen
+
+
+    </ul>
+
+	  	  <!--
+
+	  <h2>Some metrics</h2>
+
+
+<img src="https://img.shields.io/github/stars/probml/pml-book">
+
+	    <img src="https://starchart.cc/probml/pml-book.svg"
+       alt="downloads over time">
+-->
+
+
+  <p>
+<h2><a id="ack"></a>Acknowledgements</h2>
+
+I would like to thank the following people for helping with this book.
+
+<ul>
+
+<li> People who helped write some of the sections:
+	Sami Abu-El-Haija,
+	Mathieu Blondel,
+	Ines Chami,
+  Krzysztof Choromanski,
+  Zico Kolter,
+  Frederick Kunster,
+  Si Yi Meng,
+  Aaron Mishkin,
+  Byran Perozzi,
+  Colin Raffel,
+  Mark Schmidt,
+  Sharan Vaswani.
+  
+      <li> People who helped proof-read: John Fearns, Peter Cerno, and many other people
+	      listed in the <a href="https://github.com/probml/pml-book/issues">github issues page</a>.
+	     	      
+		      
+      <li> People who have helped with the code: Mahmoud Soliman,
+	        Aleyna Kara,   Gerardo Durán-Martín,  Srikar Jilugu,  Drishti Patel,  Ming Liang Ang,
+	       Zeel Patel, Karm Patel, Nitish Sharma, Ankita Kumari Jain, Nipun Batra
+	      and other people listed on the 
+	      <a href="https://github.com/probml/pyprobml/blob/master/README.md#acknowledgements">github page</a>.
+    </ul>
+    
+
