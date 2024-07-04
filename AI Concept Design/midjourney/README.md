@@ -2,7 +2,7 @@
 
 - **/imagine prompt**  a terminator in a cartoon pop art style, funny, front headed, bright colors, simple lines. -- video -- stop 80
 
-<img width="80%" height="80%" src="../../images/MJ-video.png">
+<img width="80%" height="80%" src="MJ/MJ-video.png">
 
 <hr/>
 
@@ -20,4 +20,4 @@
 
 - **/imagine prompt**  a girl on a beach in a cyberpunk world. She has red hair and green eyes. She is sitting and looking at the camera. The camera is three-quarters on the girl. lower angle. --ar 2:3 --niji
 
-<img width="80%" height="80%" src="../../images/MJ-niji.png">
+<img width="80%" height="80%" src="MJ/MJ-niji.png">
