@@ -1,0 +1,809 @@
+﻿Log file open, 06/21/17 18:29:28
+LogInit:Display: Running engine for game: H23_ArcadeShooter
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-661454779) SRandInit(-661454769).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.105509
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3466753
+LogInit: Engine Version: 4.16.1-3466753+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): May 31 2017 02:03:30
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Unreal Engine/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.06.21-22.29.28:915][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.21-22.29.28:915][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.06.21-22.29.28:929][  0]LogInit: Computer: MONSTER
+[2017.06.21-22.29.28:929][  0]LogInit: User: acookson
+[2017.06.21-22.29.28:929][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.06.21-22.29.28:929][  0]LogInit: High frequency timer resolution =14.318180 MHz
+[2017.06.21-22.29.28:929][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.06.21-22.29.28:929][  0]LogMemory: Platform Memory Stats for Windows
+[2017.06.21-22.29.28:929][  0]LogMemory: Process Physical Memory: 272.99 MB used, 272.99 MB peak
+[2017.06.21-22.29.28:929][  0]LogMemory: Process Virtual Memory: 263.03 MB used, 263.03 MB peak
+[2017.06.21-22.29.28:929][  0]LogMemory: Physical Memory: 9173.98 MB used,  7151.77 MB free, 16325.75 MB total
+[2017.06.21-22.29.28:929][  0]LogMemory: Virtual Memory: 640.50 MB used,  7151.77 MB free, 134217728.00 MB total
+[2017.06.21-22.29.29:015][  0]LogInit: Using OS detected language (en-US).
+[2017.06.21-22.29.29:015][  0]LogInit: Using OS detected locale (en-US).
+[2017.06.21-22.29.29:018][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2017.06.21-22.29.29:967][  0]LogD3D11RHI: D3D11 adapters:
+[2017.06.21-22.29.30:578][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
+[2017.06.21-22.29.30:578][  0]LogD3D11RHI:       8119/0/8162 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.06.21-22.29.30:579][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.06.21-22.29.30:579][  0]LogD3D11RHI:       0/0/8162 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.06.21-22.29.30:580][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.06.21-22.29.30:610][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.06.21-22.29.30:610][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
+[2017.06.21-22.29.30:610][  0]LogWindows: EnumDisplayDevices:
+[2017.06.21-22.29.30:610][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:0 D:1)
+[2017.06.21-22.29.30:610][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
+[2017.06.21-22.29.30:610][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2017.06.21-22.29.30:611][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2017.06.21-22.29.30:611][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.06.21-22.29.30:611][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
+[2017.06.21-22.29.30:611][  0]LogD3D11RHI:   Driver Version: 382.05 (internal:22.21.13.8205, unified:382.05)
+[2017.06.21-22.29.30:611][  0]LogD3D11RHI:      Driver Date: 5-1-2017
+[2017.06.21-22.29.30:611][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.06.21-22.29.31:192][  0]LogD3D11RHI: Async texture creation enabled
+[2017.06.21-22.29.31:225][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.06.21-22.29.31:309][  0]LogShaderCompilers: Guid format shader working directory is 17 characters bigger than the processId version (H:/BookProjects/Hour_23/Hour_23/Intermediate/Shaders/WorkingDirectory/41748/).
+[2017.06.21-22.29.31:309][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/acookson/AppData/Local/Temp/UnrealShaderWorkingDir/B6ABA01648F06A3633086294699D3A21/'.
+[2017.06.21-22.29.31:309][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.06.21-22.29.32:496][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.06.21-22.29.32:554][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.06.21-22.29.32:611][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.06.21-22.29.32:668][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.06.21-22.29.32:730][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.06.21-22.29.32:791][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.06.21-22.29.32:851][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.06.21-22.29.32:908][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.06.21-22.29.32:959][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.06.21-22.29.33:015][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.06.21-22.29.33:071][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.06.21-22.29.33:128][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.06.21-22.29.33:184][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.06.21-22.29.33:240][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.06.21-22.29.33:296][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.06.21-22.29.33:408][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.06.21-22.29.33:408][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.06.21-22.29.33:454][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.06.21-22.29.33:557][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.06.21-22.29.33:592][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.06.21-22.29.33:648][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.06.21-22.29.33:704][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.06.21-22.29.33:760][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.06.21-22.29.33:815][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.06.21-22.29.33:815][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.06.21-22.29.34:392][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.06.21-22.29.34:486][  0]LogDerivedDataCache: Loaded boot cache 0.09s 89MB C:/Users/acookson/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.06.21-22.29.34:486][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/acookson/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.06.21-22.29.34:486][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file H:/BookProjects/Hour_23/Hour_23/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.06.21-22.29.34:486][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.06.21-22.29.34:486][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file H:/BookProjects/Hour_23/Hour_23/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.06.21-22.29.34:486][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.06.21-22.29.34:502][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.06.21-22.29.34:514][  0]LogDerivedDataCache: Using Local data cache path C:/Users/acookson/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.06.21-22.29.34:525][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.06.21-22.29.34:525][  0]LogSlate: Using Freetype 2.6.0
+[2017.06.21-22.29.34:526][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.21-22.29.34:526][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.21-22.29.34:873][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.21-22.29.34:948][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.06.21-22.29.35:139][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.06.21-22.29.35:190][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.06.21-22.29.35:243][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.06.21-22.29.35:243][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.06.21-22.29.35:243][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.06.21-22.29.35:851][  0]LogNetVersion: H23_ArcadeShooter , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 2864363789)
+[2017.06.21-22.29.35:922][  0]LogAssetRegistry: FAssetRegistry took 0.0261 seconds to start up
+[2017.06.21-22.29.35:997][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.047853 seconds
+[2017.06.21-22.29.36:002][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.06.21-22.29.36:002][  0]LogUObjectAllocator: 7260416 out of 0 bytes used by permanent object pool.
+[2017.06.21-22.29.36:002][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.06.21-22.29.36:096][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.06.21-22.29.38:734][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.06.21-22.29.38:801][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.06.21-22.29.39:457][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.06.21-22.29.39:932][  0]SourceControl: Info Source control is disabled
+[2017.06.21-22.29.39:965][  0]SourceControl: Info Source control is disabled
+[2017.06.21-22.29.40:019][  0]SourceControl: Info Source control is disabled
+[2017.06.21-22.29.40:075][  0]SourceControl: Info Source control is disabled
+[2017.06.21-22.29.40:895][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.06.21-22.29.41:567][  0]LogEngine: Initializing Engine...
+[2017.06.21-22.29.41:610][  0]LogHMD: Failed to initialize OpenVR with code 126
+[2017.06.21-22.29.41:869][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.06.21-22.29.41:869][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.06.21-22.29.42:016][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.06.21-22.29.42:037][  0]LogInit: XAudio2 using 'Speakers (Dell AC511 USB SoundBar)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.21-22.29.42:067][  0]LogInit: FAudioDevice initialized.
+[2017.06.21-22.29.42:107][  0]LogDerivedDataCache: Saved boot cache 0.04s 89MB C:/Users/acookson/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.06.21-22.29.42:126][  0]LogInit: Texture streaming: Enabled
+[2017.06.21-22.29.42:245][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.06.21-22.29.42:528][  0]LogInit: Transaction tracking system initialized
+[2017.06.21-22.29.42:902][  0]BlueprintLog: New page: Editor Load
+[2017.06.21-22.29.44:022][  0]LocalizationService: Info Localization service is disabled
+[2017.06.21-22.29.44:834][  0]LogConsoleResponse:Display: 
+[2017.06.21-22.29.44:996][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.06.21-22.29.44:996][  0]LogCook:Display: Mobile HDR setting 1
+[2017.06.21-22.29.45:365][  0]LogFileCache: Scanning file cache for directory 'H:/BookProjects/Hour_23/Hour_23/Content/' took 0.01s
+[2017.06.21-22.29.46:169][  0]SourceControl: Info Source control is disabled
+[2017.06.21-22.29.46:170][  0]LogFactory: FactoryCreateFile: PackFactory with PackFactory (0 0 C:/Program Files/Unreal Engine/UE_4.16/FeaturePacks/StarterContent.upack)
+[2017.06.21-22.29.46:176][  0]LogPackFactory: Finished extracting 8 files (including 0 errors).
+[2017.06.21-22.29.46:183][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Floor_400x400.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Architecture/Floor_400x400.uasset"
+[2017.06.21-22.29.46:190][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Pillar_50x500.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Architecture/Pillar_50x500.uasset"
+[2017.06.21-22.29.46:211][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/SM_AssetPlatform.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Architecture/SM_AssetPlatform.uasset"
+[2017.06.21-22.29.46:216][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x200.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Architecture/Wall_400x200.uasset"
+[2017.06.21-22.29.46:223][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x300.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Architecture/Wall_400x300.uasset"
+[2017.06.21-22.29.46:230][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_400x400.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Architecture/Wall_400x400.uasset"
+[2017.06.21-22.29.46:236][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_500x500.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Architecture/Wall_500x500.uasset"
+[2017.06.21-22.29.46:242][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x300.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Architecture/Wall_Door_400x300.uasset"
+[2017.06.21-22.29.46:248][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Door_400x400.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Architecture/Wall_Door_400x400.uasset"
+[2017.06.21-22.29.46:254][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x300.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Architecture/Wall_Window_400x300.uasset"
+[2017.06.21-22.29.46:260][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Architecture/Wall_Window_400x400.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Architecture/Wall_Window_400x400.uasset"
+[2017.06.21-22.29.46:279][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse01.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Collapse01.uasset"
+[2017.06.21-22.29.46:297][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse02.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Collapse02.uasset"
+[2017.06.21-22.29.46:302][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Collapse_Cue.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Collapse_Cue.uasset"
+[2017.06.21-22.29.46:317][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion01.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Explosion01.uasset"
+[2017.06.21-22.29.46:333][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion02.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Explosion02.uasset"
+[2017.06.21-22.29.46:336][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Explosion_Cue.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Explosion_Cue.uasset"
+[2017.06.21-22.29.46:360][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Fire01.uasset"
+[2017.06.21-22.29.46:363][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire01_Cue.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Fire01_Cue.uasset"
+[2017.06.21-22.29.46:397][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Fire_Sparks01.uasset"
+[2017.06.21-22.29.46:401][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Fire_Sparks01_Cue.uasset"
+[2017.06.21-22.29.46:419][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Light01.uasset"
+[2017.06.21-22.29.46:422][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light01_Cue.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Light01_Cue.uasset"
+[2017.06.21-22.29.46:440][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Light02.uasset"
+[2017.06.21-22.29.46:443][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Light02_Cue.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Light02_Cue.uasset"
+[2017.06.21-22.29.46:465][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Smoke01.uasset"
+[2017.06.21-22.29.46:470][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Smoke01_Cue.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Smoke01_Cue.uasset"
+[2017.06.21-22.29.46:475][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Background_Cue.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Starter_Background_Cue.uasset"
+[2017.06.21-22.29.46:582][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Birds01.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Starter_Birds01.uasset"
+[2017.06.21-22.29.46:991][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music01.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Starter_Music01.uasset"
+[2017.06.21-22.29.46:993][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Music_Cue.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Starter_Music_Cue.uasset"
+[2017.06.21-22.29.47:082][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind05.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Starter_Wind05.uasset"
+[2017.06.21-22.29.47:168][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Starter_Wind06.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Starter_Wind06.uasset"
+[2017.06.21-22.29.47:203][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Steam01.uasset"
+[2017.06.21-22.29.47:205][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Audio/Steam01_Cue.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Audio/Steam01_Cue.uasset"
+[2017.06.21-22.29.47:216][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset"
+[2017.06.21-22.29.47:222][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Blueprints/Blueprint_Effect_Explosion.uasset"
+[2017.06.21-22.29.47:228][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Blueprints/Blueprint_Effect_Fire.uasset"
+[2017.06.21-22.29.47:233][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Blueprints/Blueprint_Effect_Smoke.uasset"
+[2017.06.21-22.29.47:238][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Blueprints/Blueprint_Effect_Sparks.uasset"
+[2017.06.21-22.29.47:243][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Blueprints/Blueprint_Effect_Steam.uasset"
+[2017.06.21-22.29.47:257][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Blueprints/Blueprint_WallSconce.uasset"
+[2017.06.21-22.29.47:277][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/BP_LightStudio.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Blueprints/BP_LightStudio.uasset"
+[2017.06.21-22.29.47:281][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Blueprints/Assets/FogBrightnessLUT.uasset"
+[2017.06.21-22.29.47:287][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Blueprints/Assets/M_LightStage_Arrows.uasset"
+[2017.06.21-22.29.47:294][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Black.uasset"
+[2017.06.21-22.29.47:302][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_HDRI.uasset"
+[2017.06.21-22.29.47:309][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Blueprints/Assets/M_LightStage_Skybox_Master.uasset"
+[2017.06.21-22.29.47:342][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/Skybox.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Blueprints/Assets/Skybox.uasset"
+[2017.06.21-22.29.47:368][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Blueprints/Assets/SM_Arrows.uasset"
+[2017.06.21-22.29.47:370][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Blueprints/Assets/SunlightColorLUT.uasset"
+[2017.06.21-22.29.50:129][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+[2017.06.21-22.29.50:138][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting.umap" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Maps/Advanced_Lighting.umap"
+[2017.06.21-22.29.50:146][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset"
+[2017.06.21-22.29.50:201][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default.umap" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Maps/Minimal_Default.umap"
+[2017.06.21-22.29.50:234][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Maps/Minimal_Default_BuiltData.uasset"
+[2017.06.21-22.29.50:515][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap.umap" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Maps/StarterMap.umap"
+[2017.06.21-22.29.51:061][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Maps/StarterMap_BuiltData.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Maps/StarterMap_BuiltData.uasset"
+[2017.06.21-22.29.51:073][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_AssetPlatform.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_AssetPlatform.uasset"
+[2017.06.21-22.29.51:104][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Floor.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Basic_Floor.uasset"
+[2017.06.21-22.29.51:116][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Basic_Wall.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Basic_Wall.uasset"
+[2017.06.21-22.29.51:126][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Brick_Clay_Beveled.uasset"
+[2017.06.21-22.29.51:137][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_New.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Brick_Clay_New.uasset"
+[2017.06.21-22.29.51:152][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Brick_Clay_Old.uasset"
+[2017.06.21-22.29.51:164][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Brick_Cut_Stone.uasset"
+[2017.06.21-22.29.51:174][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Brick_Hewn_Stone.uasset"
+[2017.06.21-22.29.51:184][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Ceramic_Tile_Checker.uasset"
+[2017.06.21-22.29.51:195][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_CobbleStone_Pebble.uasset"
+[2017.06.21-22.29.51:212][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_CobbleStone_Rough.uasset"
+[2017.06.21-22.29.51:228][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_CobbleStone_Smooth.uasset"
+[2017.06.21-22.29.51:237][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_ColorGrid_LowSpec.uasset"
+[2017.06.21-22.29.51:248][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Grime.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Concrete_Grime.uasset"
+[2017.06.21-22.29.51:258][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Panels.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Concrete_Panels.uasset"
+[2017.06.21-22.29.51:268][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Poured.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Concrete_Poured.uasset"
+[2017.06.21-22.29.51:279][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Concrete_Tiles.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Concrete_Tiles.uasset"
+[2017.06.21-22.29.51:285][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Glass.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Glass.uasset"
+[2017.06.21-22.29.51:297][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Grass.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Ground_Grass.uasset"
+[2017.06.21-22.29.51:307][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Gravel.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Ground_Gravel.uasset"
+[2017.06.21-22.29.51:318][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Ground_Moss.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Ground_Moss.uasset"
+[2017.06.21-22.29.51:326][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Metal_Brushed_Nickel.uasset"
+[2017.06.21-22.29.51:336][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Metal_Burnished_Steel.uasset"
+[2017.06.21-22.29.51:346][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Chrome.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Metal_Chrome.uasset"
+[2017.06.21-22.29.51:357][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Copper.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Metal_Copper.uasset"
+[2017.06.21-22.29.51:365][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Gold.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Metal_Gold.uasset"
+[2017.06.21-22.29.51:376][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Rust.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Metal_Rust.uasset"
+[2017.06.21-22.29.51:387][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Metal_Steel.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Metal_Steel.uasset"
+[2017.06.21-22.29.51:399][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Basalt.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Rock_Basalt.uasset"
+[2017.06.21-22.29.51:410][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Rock_Marble_Polished.uasset"
+[2017.06.21-22.29.51:421][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Sandstone.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Rock_Sandstone.uasset"
+[2017.06.21-22.29.51:431][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Rock_Slate.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Rock_Slate.uasset"
+[2017.06.21-22.29.51:441][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Tech_Checker_Dot.uasset"
+[2017.06.21-22.29.51:454][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Tech_Hex_Tile.uasset"
+[2017.06.21-22.29.51:464][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Tech_Hex_Tile_Pulse.uasset"
+[2017.06.21-22.29.51:473][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Tech_Panel.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Tech_Panel.uasset"
+[2017.06.21-22.29.51:483][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Lake.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Water_Lake.uasset"
+[2017.06.21-22.29.51:493][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Water_Ocean.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Water_Ocean.uasset"
+[2017.06.21-22.29.51:503][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Polished.uasset"
+[2017.06.21-22.29.51:513][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Wood_Floor_Walnut_Worn.uasset"
+[2017.06.21-22.29.51:523][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Oak.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Wood_Oak.uasset"
+[2017.06.21-22.29.51:535][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Pine.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Wood_Pine.uasset"
+[2017.06.21-22.29.51:545][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Materials/M_Wood_Walnut.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Materials/M_Wood_Walnut.uasset"
+[2017.06.21-22.29.51:550][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Ambient_Dust.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Particles/P_Ambient_Dust.uasset"
+[2017.06.21-22.29.51:564][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Explosion.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Particles/P_Explosion.uasset"
+[2017.06.21-22.29.51:578][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Fire.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Particles/P_Fire.uasset"
+[2017.06.21-22.29.51:585][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Smoke.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Particles/P_Smoke.uasset"
+[2017.06.21-22.29.51:595][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Sparks.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Particles/P_Sparks.uasset"
+[2017.06.21-22.29.51:603][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/P_Steam_Lit.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Particles/P_Steam_Lit.uasset"
+[2017.06.21-22.29.51:610][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Burst.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Particles/Materials/M_Burst.uasset"
+[2017.06.21-22.29.51:618][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Particles/Materials/M_Dust_Particle.uasset"
+[2017.06.21-22.29.51:626][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Particles/Materials/M_explosion_subUV.uasset"
+[2017.06.21-22.29.51:633][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Particles/Materials/M_Fire_SubUV.uasset"
+[2017.06.21-22.29.51:639][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/m_flare_01.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Particles/Materials/m_flare_01.uasset"
+[2017.06.21-22.29.51:647][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Particles/Materials/M_Heat_Distortion.uasset"
+[2017.06.21-22.29.51:654][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Particles/Materials/M_Radial_Gradient.uasset"
+[2017.06.21-22.29.51:660][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Particles/Materials/M_radial_ramp.uasset"
+[2017.06.21-22.29.51:668][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Particles/Materials/M_smoke_subUV.uasset"
+[2017.06.21-22.29.51:676][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Particles/Materials/M_Spark.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Particles/Materials/M_Spark.uasset"
+[2017.06.21-22.29.51:688][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/MaterialSphere.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/MaterialSphere.uasset"
+[2017.06.21-22.29.51:699][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Bush.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_Bush.uasset"
+[2017.06.21-22.29.51:711][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Chair.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_Chair.uasset"
+[2017.06.21-22.29.51:719][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_CornerFrame.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_CornerFrame.uasset"
+[2017.06.21-22.29.51:733][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Couch.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_Couch.uasset"
+[2017.06.21-22.29.51:745][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Door.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_Door.uasset"
+[2017.06.21-22.29.51:752][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_DoorFrame.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_DoorFrame.uasset"
+[2017.06.21-22.29.51:760][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_GlassWindow.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_GlassWindow.uasset"
+[2017.06.21-22.29.51:776][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_Lamp_Ceiling.uasset"
+[2017.06.21-22.29.51:786][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Lamp_Wall.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_Lamp_Wall.uasset"
+[2017.06.21-22.29.51:893][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_MatPreviewMesh_02.uasset"
+[2017.06.21-22.29.51:906][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_PillarFrame.uasset"
+[2017.06.21-22.29.51:918][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_PillarFrame300.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_PillarFrame300.uasset"
+[2017.06.21-22.29.51:930][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Rock.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_Rock.uasset"
+[2017.06.21-22.29.51:940][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Shelf.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_Shelf.uasset"
+[2017.06.21-22.29.51:947][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Stairs.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_Stairs.uasset"
+[2017.06.21-22.29.51:972][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_Statue.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_Statue.uasset"
+[2017.06.21-22.29.51:995][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_TableRound.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_TableRound.uasset"
+[2017.06.21-22.29.52:003][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/SM_WindowFrame.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/SM_WindowFrame.uasset"
+[2017.06.21-22.29.52:011][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Bush.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/Materials/M_Bush.uasset"
+[2017.06.21-22.29.52:019][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Chair.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/Materials/M_Chair.uasset"
+[2017.06.21-22.29.52:027][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Door.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/Materials/M_Door.uasset"
+[2017.06.21-22.29.52:036][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Frame.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/Materials/M_Frame.uasset"
+[2017.06.21-22.29.52:046][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Lamp.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/Materials/M_Lamp.uasset"
+[2017.06.21-22.29.52:053][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/Materials/M_MaterialSphere.uasset"
+[2017.06.21-22.29.52:059][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/Materials/M_MaterialSphere_Plain.uasset"
+[2017.06.21-22.29.52:068][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Rock.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/Materials/M_Rock.uasset"
+[2017.06.21-22.29.52:077][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Shelf.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/Materials/M_Shelf.uasset"
+[2017.06.21-22.29.52:085][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_Statue.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/Materials/M_Statue.uasset"
+[2017.06.21-22.29.52:093][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_StatueGlass.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/Materials/M_StatueGlass.uasset"
+[2017.06.21-22.29.52:103][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Props/Materials/M_TableRound.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Props/Materials/M_TableRound.uasset"
+[2017.06.21-22.29.52:112][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cone.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_Cone.uasset"
+[2017.06.21-22.29.52:121][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cube.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_Cube.uasset"
+[2017.06.21-22.29.52:129][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Cylinder.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_Cylinder.uasset"
+[2017.06.21-22.29.52:143][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_NarrowCapsule.uasset"
+[2017.06.21-22.29.52:152][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_Pipe.uasset"
+[2017.06.21-22.29.52:163][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_180.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_Pipe_180.uasset"
+[2017.06.21-22.29.52:171][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Pipe_90.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_Pipe_90.uasset"
+[2017.06.21-22.29.52:177][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Plane.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_Plane.uasset"
+[2017.06.21-22.29.52:183][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_QuadPyramid.uasset"
+[2017.06.21-22.29.52:199][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Sphere.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_Sphere.uasset"
+[2017.06.21-22.29.52:224][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Torus.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_Torus.uasset"
+[2017.06.21-22.29.52:230][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_Trim.uasset"
+[2017.06.21-22.29.52:237][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_Trim_90_In.uasset"
+[2017.06.21-22.29.52:245][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_Trim_90_Out.uasset"
+[2017.06.21-22.29.52:251][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_TriPyramid.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_TriPyramid.uasset"
+[2017.06.21-22.29.52:262][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Tube.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_Tube.uasset"
+[2017.06.21-22.29.52:269][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_A.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_Wedge_A.uasset"
+[2017.06.21-22.29.52:275][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_Wedge_B.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_Wedge_B.uasset"
+[2017.06.21-22.29.52:285][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Shapes/Shape_WideCapsule.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Shapes/Shape_WideCapsule.uasset"
+[2017.06.21-22.29.52:628][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Brick_Clay_Beveled_D.uasset"
+[2017.06.21-22.29.53:000][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Brick_Clay_Beveled_M.uasset"
+[2017.06.21-22.29.53:339][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Brick_Clay_Beveled_N.uasset"
+[2017.06.21-22.29.53:611][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Brick_Clay_New_D.uasset"
+[2017.06.21-22.29.54:011][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Brick_Clay_New_M.uasset"
+[2017.06.21-22.29.54:324][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Brick_Clay_New_N.uasset"
+[2017.06.21-22.29.54:819][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Brick_Clay_Old_D.uasset"
+[2017.06.21-22.29.55:156][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Brick_Clay_Old_N.uasset"
+[2017.06.21-22.29.55:705][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Brick_Cut_Stone_D.uasset"
+[2017.06.21-22.29.56:000][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Brick_Cut_Stone_N.uasset"
+[2017.06.21-22.29.56:301][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Brick_Hewn_Stone_D.uasset"
+[2017.06.21-22.29.56:582][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Brick_Hewn_Stone_M.uasset"
+[2017.06.21-22.29.56:980][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Brick_Hewn_Stone_N.uasset"
+[2017.06.21-22.29.56:991][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Burst_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Burst_M.uasset"
+[2017.06.21-22.29.57:015][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Bush_D.uasset"
+[2017.06.21-22.29.57:034][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Bush_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Bush_N.uasset"
+[2017.06.21-22.29.57:048][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Ceramic_Tile_M.uasset"
+[2017.06.21-22.29.57:062][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Ceramic_Tile_N.uasset"
+[2017.06.21-22.29.57:088][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Chair_M.uasset"
+[2017.06.21-22.29.57:161][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Chair_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Chair_N.uasset"
+[2017.06.21-22.29.57:171][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Checker_Noise_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Checker_Noise_M.uasset"
+[2017.06.21-22.29.57:661][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_CobbleStone_Pebble_D.uasset"
+[2017.06.21-22.29.57:728][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_CobbleStone_Pebble_M.uasset"
+[2017.06.21-22.29.58:233][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_CobbleStone_Pebble_N.uasset"
+[2017.06.21-22.29.58:370][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_CobbleStone_Rough_D.uasset"
+[2017.06.21-22.29.58:496][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_CobbleStone_Rough_N.uasset"
+[2017.06.21-22.29.58:789][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_CobbleStone_Smooth_D.uasset"
+[2017.06.21-22.29.59:028][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_CobbleStone_Smooth_M.uasset"
+[2017.06.21-22.29.59:458][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_CobbleStone_Smooth_N.uasset"
+[2017.06.21-22.29.59:930][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Concrete_Grime_D.uasset"
+[2017.06.21-22.30.00:318][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Concrete_Panels_D.uasset"
+[2017.06.21-22.30.00:609][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Concrete_Panels_N.uasset"
+[2017.06.21-22.30.01:137][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Concrete_Poured_D.uasset"
+[2017.06.21-22.30.01:442][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Concrete_Poured_N.uasset"
+[2017.06.21-22.30.01:656][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Concrete_Tiles_D.uasset"
+[2017.06.21-22.30.01:911][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Concrete_Tiles_M.uasset"
+[2017.06.21-22.30.02:175][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Concrete_Tiles_N.uasset"
+[2017.06.21-22.30.02:180][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Concrete_Tiles_Variation_M.uasset"
+[2017.06.21-22.30.02:312][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Detail_Rocky_N.uasset"
+[2017.06.21-22.30.02:341][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Door_M.uasset"
+[2017.06.21-22.30.02:383][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Door_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Door_N.uasset"
+[2017.06.21-22.30.02:390][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Dust_Particle_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Dust_Particle_D.uasset"
+[2017.06.21-22.30.02:506][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Explosion_SubUV.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Explosion_SubUV.uasset"
+[2017.06.21-22.30.02:531][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_SubUV.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Fire_SubUV.uasset"
+[2017.06.21-22.30.02:561][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Fire_Tiled_D.uasset"
+[2017.06.21-22.30.02:585][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Frame_M.uasset"
+[2017.06.21-22.30.02:632][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Frame_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Frame_N.uasset"
+[2017.06.21-22.30.02:635][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Gradinet_01.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Gradinet_01.uasset"
+[2017.06.21-22.30.03:204][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Ground_Grass_D.uasset"
+[2017.06.21-22.30.03:698][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Grass_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Ground_Grass_N.uasset"
+[2017.06.21-22.30.04:208][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Ground_Gravel_D.uasset"
+[2017.06.21-22.30.04:557][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Ground_Gravel_N.uasset"
+[2017.06.21-22.30.05:089][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_ground_Moss_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_ground_Moss_D.uasset"
+[2017.06.21-22.30.05:458][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Ground_Moss_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Ground_Moss_N.uasset"
+[2017.06.21-22.30.05:489][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Lamp_M.uasset"
+[2017.06.21-22.30.05:565][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Lamp_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Lamp_N.uasset"
+[2017.06.21-22.30.06:091][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_MacroVariation.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_MacroVariation.uasset"
+[2017.06.21-22.30.06:481][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Metal_Aluminum_D.uasset"
+[2017.06.21-22.30.06:864][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Copper_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Metal_Copper_D.uasset"
+[2017.06.21-22.30.07:282][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Metal_Gold_D.uasset"
+[2017.06.21-22.30.07:417][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Gold_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Metal_Gold_N.uasset"
+[2017.06.21-22.30.07:848][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Metal_Rust_D.uasset"
+[2017.06.21-22.30.08:175][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Rust_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Metal_Rust_N.uasset"
+[2017.06.21-22.30.08:349][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Metal_Steel_D.uasset"
+[2017.06.21-22.30.08:570][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Metal_Steel_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Metal_Steel_N.uasset"
+[2017.06.21-22.30.08:927][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Perlin_Noise_M.uasset"
+[2017.06.21-22.30.09:056][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_RockMesh_M.uasset"
+[2017.06.21-22.30.09:302][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_RockMesh_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_RockMesh_N.uasset"
+[2017.06.21-22.30.09:677][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Rock_Basalt_D.uasset"
+[2017.06.21-22.30.10:033][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Rock_Basalt_N.uasset"
+[2017.06.21-22.30.10:263][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Rock_Marble_Polished_D.uasset"
+[2017.06.21-22.30.10:641][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Rock_Sandstone_D.uasset"
+[2017.06.21-22.30.10:999][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Rock_Sandstone_N.uasset"
+[2017.06.21-22.30.11:514][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Rock_Slate_D.uasset"
+[2017.06.21-22.30.11:924][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Slate_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Rock_Slate_N.uasset"
+[2017.06.21-22.30.12:288][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Rock_Smooth_Granite_D.uasset"
+[2017.06.21-22.30.12:314][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Shelf_M.uasset"
+[2017.06.21-22.30.12:379][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Shelf_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Shelf_N.uasset"
+[2017.06.21-22.30.12:392][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Single_Tile_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Single_Tile_N.uasset"
+[2017.06.21-22.30.12:559][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_SubUV.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Smoke_SubUV.uasset"
+[2017.06.21-22.30.12:569][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Smoke_Tiled_D.uasset"
+[2017.06.21-22.30.12:583][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Spark_Core.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Spark_Core.uasset"
+[2017.06.21-22.30.12:608][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Statue_M.uasset"
+[2017.06.21-22.30.12:631][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Statue_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Statue_N.uasset"
+[2017.06.21-22.30.12:667][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_TableRound_M.uasset"
+[2017.06.21-22.30.12:726][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_TableRound_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_TableRound_N.uasset"
+[2017.06.21-22.30.12:735][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Tech_Dot_M.uasset"
+[2017.06.21-22.30.12:747][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Dot_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Tech_Dot_N.uasset"
+[2017.06.21-22.30.12:785][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Tech_Hex_Tile_M.uasset"
+[2017.06.21-22.30.12:808][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Tech_Hex_Tile_N.uasset"
+[2017.06.21-22.30.12:848][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Tech_Panel_M.uasset"
+[2017.06.21-22.30.12:947][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Tech_Panel_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Tech_Panel_N.uasset"
+[2017.06.21-22.30.13:018][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Water_M.uasset"
+[2017.06.21-22.30.13:124][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Water_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Water_N.uasset"
+[2017.06.21-22.30.13:319][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Wood_Floor_Walnut_D.uasset"
+[2017.06.21-22.30.13:499][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Wood_Floor_Walnut_M.uasset"
+[2017.06.21-22.30.13:631][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Wood_Floor_Walnut_N.uasset"
+[2017.06.21-22.30.13:917][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Wood_Oak_D.uasset"
+[2017.06.21-22.30.14:166][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Oak_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Wood_Oak_N.uasset"
+[2017.06.21-22.30.14:604][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Wood_Pine_D.uasset"
+[2017.06.21-22.30.14:762][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Pine_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Wood_Pine_N.uasset"
+[2017.06.21-22.30.15:050][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Wood_Walnut_D.uasset"
+[2017.06.21-22.30.15:228][  0]LogPackFactory: Copied "../../../Samples/StarterContent/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset" to "H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Textures/T_Wood_Walnut_N.uasset"
+[2017.06.21-22.30.15:345][  0]LogRenderer: Reallocating scene render targets to support 256x256 NumSamples 1 (Frame:1).
+[2017.06.21-22.30.15:423][  0]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/StarterContent/Architecture/Floor_400x400" FILE="H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Architecture/Floor_400x400.uasset" SILENT=true
+[2017.06.21-22.30.15:453][  0]LogSavePackage: Save=19.19ms
+[2017.06.21-22.30.15:453][  0]LogSavePackage: Moving 'H:/BookProjects/Hour_23/Hour_23/Saved/Floor_400x40094AC2EED40CB9A303978688BB9EDAB97.tmp' to 'H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Architecture/Floor_400x400.uasset'
+[2017.06.21-22.30.15:457][  0]LogSavePackage:Display: Finished SavePackage H:/BookProjects/Hour_23/Hour_23/Content/StarterContent/Architecture/Floor_400x400.uasset
+[2017.06.21-22.30.15:457][  0]LogFeaturePack:Warning: Inserted 1 feature packs
+[2017.06.21-22.30.15:460][  0]Cmd: MAP LOAD FILE="H:/BookProjects/Hour_23/Hour_23/Content/Maps/Level_0.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.06.21-22.30.15:461][  0]LightingResults: New page: Lighting Build
+[2017.06.21-22.30.15:508][  0]MapCheck: New page: Map Check
+[2017.06.21-22.30.15:508][  0]LightingResults: New page: Lighting Build
+[2017.06.21-22.30.16:218][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave pop...
+[2017.06.21-22.30.16:307][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave MoverSound...
+[2017.06.21-22.30.16:409][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave Pong...
+[2017.06.21-22.30.16:434][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave bong...
+[2017.06.21-22.30.16:476][  0]LogAudioDerivedData:Display: Building compressed audio format OGG wave bing...
+[2017.06.21-22.30.16:612][  0]LogAIModule: Creating AISystem for world Level_0
+[2017.06.21-22.30.16:613][  0]LogActorComponent: RegisterComponentWithWorld: (/Game/Maps/Level_0.Level_0:PersistentLevel.WorldSettings_1.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.06.21-22.30.16:620][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.06.21-22.30.16:639][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.06.21-22.30.16:701][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 61.856ms to complete.
+[2017.06.21-22.30.16:701][  0]LogFileHelpers: Loading map 'Level_0' took 1.241
+[2017.06.21-22.30.16:880][  0]LogCollectionManager: Loaded 0 collections in 0.001445 seconds
+[2017.06.21-22.30.16:975][  0]LogFileCache: Scanning file cache for directory 'H:/BookProjects/Hour_23/Hour_23/Saved/Collections/' took 0.01s
+[2017.06.21-22.30.16:975][  0]LogFileCache: Scanning file cache for directory 'H:/BookProjects/Hour_23/Hour_23/Content/Developers/acookson/Collections/' took 0.01s
+[2017.06.21-22.30.16:975][  0]LogFileCache: Scanning file cache for directory 'H:/BookProjects/Hour_23/Hour_23/Content/Collections/' took 0.01s
+[2017.06.21-22.30.16:975][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000003 seconds
+[2017.06.21-22.30.16:984][  0]LogContentBrowser: Native class hierarchy populated in 0.0094 seconds. Added 2329 classes and 491 folders.
+[2017.06.21-22.30.17:065][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2017.06.21-22.30.17:107][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2017.06.21-22.30.17:167][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2017.06.21-22.30.17:255][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.06.21-22.30.17:261][  0]LogSlate: Took 0.000232 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.06.21-22.30.17:263][  0]LogSlate: Took 0.000181 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.06.21-22.30.17:269][  0]LogSlate: Took 0.000227 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.06.21-22.30.17:304][  0]LogRenderer: Reallocating scene render targets to support 836x396 NumSamples 1 (Frame:1).
+[2017.06.21-22.30.17:401][  0]LogSlate: Took 0.000212 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.21-22.30.17:487][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.06.21-22.30.17:576][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2017.06.21-22.30.17:576][  0]LogLoad: (Engine Initialization) Total time: 50.51 seconds
+[2017.06.21-22.30.17:576][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.20 seconds
+[2017.06.21-22.30.17:576][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.06.21-22.30.17:576][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.06.21-22.30.17:586][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.21-22.30.17:588][  0]LogOcInput: OculusInput pre-init called
+[2017.06.21-22.30.17:588][  0]LogHMD: Starting GearVRController plugin
+[2017.06.21-22.30.17:670][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.06.21-22.30.17:732][  1]LogAssetRegistry: Asset discovery search completed in 41.8323 seconds
+[2017.06.21-22.30.17:734][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000002 seconds (found 0 objects)
+[2017.06.21-22.30.17:734][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000042 seconds (updated 0 objects)
+[2017.06.21-22.30.21:209][394]LogTemp: Repeting last play command: Selected Viewport
+[2017.06.21-22.30.21:348][394]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/Maps/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Maps/Level_0.Level_C' with ClassGeneratedBy '/Game/Maps/Level_0.Level_0:PersistentLevel.Level_0'
+[2017.06.21-22.30.21:348][394]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.21-22.30.21:348][394]PIE: New page: PIE session: Level_0 (Jun 21, 2017, 2:30:21 PM)
+[2017.06.21-22.30.21:348][394]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Level_0
+[2017.06.21-22.30.21:353][394]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004560s)
+[2017.06.21-22.30.21:353][394]LogAIModule: Creating AISystem for world Level_0
+[2017.06.21-22.30.21:354][394]LogPlayLevel: PIE: World Init took: (0.000860s)
+[2017.06.21-22.30.21:354][394]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Level_0.Level_0 to /Game/Maps/UEDPIE_0_Level_0.Level_0 (0.005711s)
+[2017.06.21-22.30.21:381][394]LogInit: XAudio2 using 'Speakers (Dell AC511 USB SoundBar)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.21-22.30.21:389][394]LogInit: FAudioDevice initialized.
+[2017.06.21-22.30.21:456][394]LogBlueprint:Warning: [Compiler PauseMenuWidget] Warning  Cast to Player Controller  is deprecated; Use standard Cast To node instead.
+[2017.06.21-22.30.21:458][394]LogBlueprint:Warning: [Compiler PauseMenuWidget] Warning [0054.39] Compile of PauseMenuWidget successful, but with 1 Warning(s) [in 3 ms] (/Game/StartMenuGame/PauseMenuWidget.PauseMenuWidget)
+[2017.06.21-22.30.21:458][394]LogBlueprint:Warning: [Compiler PauseMenuWidget] Warning [0054.39] Compile of PauseMenuWidget successful, but with 2 Warning(s) [in 0 ms] (/Game/StartMenuGame/PauseMenuWidget.PauseMenuWidget)
+[2017.06.21-22.30.21:458][394]LogBlueprint:Warning: [Compiler PauseMenuWidget] Warning [0054.39] Compile of PauseMenuWidget successful, but with 3 Warning(s) [in 0 ms] (/Game/StartMenuGame/PauseMenuWidget.PauseMenuWidget)
+[2017.06.21-22.30.21:461][394]LogBlueprint:Warning: [Compiler PauseMenuWidget] Warning  Cast to Player Controller  is deprecated; Use standard Cast To node instead.
+[2017.06.21-22.30.21:463][394]LogBlueprint:Warning: [Compiler PauseMenuWidget] Warning [0054.40] Compile of PauseMenuWidget successful, but with 1 Warning(s) [in 3 ms] (/Game/StartMenuGame/PauseMenuWidget.PauseMenuWidget)
+[2017.06.21-22.30.21:463][394]LogBlueprint:Warning: [Compiler PauseMenuWidget] Warning [0054.40] Compile of PauseMenuWidget successful, but with 2 Warning(s) [in 0 ms] (/Game/StartMenuGame/PauseMenuWidget.PauseMenuWidget)
+[2017.06.21-22.30.21:463][394]LogBlueprint:Warning: [Compiler PauseMenuWidget] Warning [0054.40] Compile of PauseMenuWidget successful, but with 3 Warning(s) [in 0 ms] (/Game/StartMenuGame/PauseMenuWidget.PauseMenuWidget)
+[2017.06.21-22.30.21:504][394]LogTexture:Display: Building textures: PauseSymbol (AutoDXT, 64X64)
+[2017.06.21-22.30.21:513][394]LogLoad: Game class is 'ArcadeShooter_GameMode_C'
+[2017.06.21-22.30.21:516][394]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Level_0.Level_0 up for play (max tick rate 0) at 2017.06.21-18.30.21
+[2017.06.21-22.30.21:517][394]LogWorld: Bringing up level for play took: 0.001236
+[2017.06.21-22.30.21:566][394]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0006 seconds. Added 11 classes and 0 folders.
+[2017.06.21-22.30.21:566][394]LogGameMode:Display: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.21-22.30.21:566][394]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2017.06.21-22.30.21:566][394]LogGameMode:Display: Match State Changed from WaitingToStart to InProgress
+[2017.06.21-22.30.21:568][394]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2017.06.21-22.30.21:568][394]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_Level_0 1.045
+[2017.06.21-22.30.21:568][394]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/Maps/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Maps/Level_0.Level_C' with ClassGeneratedBy '/Game/Maps/Level_0.Level_0:PersistentLevel.Level_0'
+[2017.06.21-22.30.21:579][394]LogAudio:Warning: Detected orphaned looping sound 'MoverSound'.
+[2017.06.21-22.30.35:060][997]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/Maps/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Maps/Level_0.Level_C' with ClassGeneratedBy '/Game/Maps/Level_0.Level_0:PersistentLevel.Level_0'
+[2017.06.21-22.30.35:097][997]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/Maps/Level_0.Level_0:PersistentLevel' has LevelScriptBlueprint '/Game/Maps/Level_0.Level_0:PersistentLevel.Level_0' with GeneratedClass '/Game/Maps/Level_0.Level_C' with ClassGeneratedBy '/Game/Maps/Level_0.Level_0:PersistentLevel.Level_0'
+[2017.06.21-22.30.43:179][935]LogUProjectInfo: Found projects:
+[2017.06.21-22.31.16:724][132]LogSlate: Took 0.000204 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.21-22.31.16:755][133]Cmd: CLOSE_SLATE_MAINFRAME
+[2017.06.21-22.31.16:829][133]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.21-22.31.17:022][134]Cmd: QUIT_EDITOR
+[2017.06.21-22.31.17:576][134]LogExit: Preparing to exit.
+[2017.06.21-22.31.18:275][134]LogExit: Editor shut down
+[2017.06.21-22.31.18:278][134]LogExit: Transaction tracking system shut down
+[2017.06.21-22.31.18:344][134]LogObj: Freed 0b from 0 cluster array pools.
+[2017.06.21-22.31.18:344][134]LogExit: Object subsystem successfully closed.
+[2017.06.21-22.31.18:365][134]LogD3D11RHI: Shutdown
+[2017.06.21-22.31.18:365][134]LogD3D11RHI: CleanupD3DDevice
+[2017.06.21-22.31.18:427][134]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.06.21-22.31.18:447][134]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (526)
+[2017.06.21-22.31.18:447][134]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (524)
+[2017.06.21-22.31.18:447][134]LogModuleManager: Shutting down and abandoning module CrashTracker (522)
+[2017.06.21-22.31.18:447][134]LogModuleManager: Shutting down and abandoning module SceneOutliner (520)
+[2017.06.21-22.31.18:447][134]LogModuleManager: Shutting down and abandoning module AddContentDialog (518)
+[2017.06.21-22.31.18:447][134]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Unreal Engine/UE_4.16/FeaturePacks/' was aborted.
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module WidgetCarousel (517)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module EditorWidgets (514)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module CollectionManager (512)
+[2017.06.21-22.31.18:448][134]LogDirectoryWatcher: A directory notification for 'H:/BookProjects/Hour_23/Hour_23/Content/Collections/' was aborted.
+[2017.06.21-22.31.18:448][134]LogDirectoryWatcher: A directory notification for 'H:/BookProjects/Hour_23/Hour_23/Content/Developers/acookson/Collections/' was aborted.
+[2017.06.21-22.31.18:448][134]LogDirectoryWatcher: A directory notification for 'H:/BookProjects/Hour_23/Hour_23/Saved/Collections/' was aborted.
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module StatsViewer (510)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module FoliageEdit (508)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module LandscapeEditor (506)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module MeshPaintMode (504)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (502)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module ActorPickerMode (500)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module GeometryMode (498)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module TextureAlignMode (496)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module BspMode (494)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module HardwareSurvey (492)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (490)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module AutomationWorker (488)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (486)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (484)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module PlacementMode (483)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (480)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (478)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (476)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (474)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (472)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module Media (471)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (468)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module CharacterAI (466)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module AudioCapture (464)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module SequenceRecorder (463)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module SmartSnapping (460)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module SessionServices (458)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module ViewportSnapping (456)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module ViewportInteraction (454)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module ClothPainter (452)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module LogVisualizer (450)
+[2017.06.21-22.31.18:448][134]LogModuleManager: Shutting down and abandoning module IntroTutorials (448)
+[2017.06.21-22.31.18:449][134]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (447)
+[2017.06.21-22.31.18:449][134]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (444)
+[2017.06.21-22.31.18:449][134]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (442)
+[2017.06.21-22.31.18:449][134]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (440)
+[2017.06.21-22.31.18:449][134]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (438)
+[2017.06.21-22.31.18:449][134]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (437)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (434)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (432)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module InputBindingEditor (430)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module MergeActors (428)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module SizeMap (426)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module TreeMap (424)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module ReferenceViewer (422)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (420)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module LocalizationService (419)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module HardwareTargeting (416)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (414)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module UndoHistory (412)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module UserFeedback (410)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module XmlParser (408)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module Blutility (406)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (404)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (403)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (400)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module SettingsEditor (398)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module ProjectLauncher (396)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module SessionFrontend (394)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module ProfilerClient (392)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module DeviceManager (390)
+[2017.06.21-22.31.19:450][134]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (389)
+[2017.06.21-22.31.19:513][134]LogModuleManager: Shutting down and abandoning module AutomationController (386)
+[2017.06.21-22.31.19:513][134]LogModuleManager: Shutting down and abandoning module AutomationWindow (384)
+[2017.06.21-22.31.19:513][134]LogModuleManager: Shutting down and abandoning module Layers (382)
+[2017.06.21-22.31.19:513][134]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (380)
+[2017.06.21-22.31.19:513][134]LogModuleManager: Shutting down and abandoning module DetailCustomizations (378)
+[2017.06.21-22.31.19:513][134]LogModuleManager: Shutting down and abandoning module PackagesDialog (376)
+[2017.06.21-22.31.19:513][134]LogModuleManager: Shutting down and abandoning module Persona (374)
+[2017.06.21-22.31.19:513][134]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (373)
+[2017.06.21-22.31.19:513][134]LogModuleManager: Shutting down and abandoning module AnimGraph (371)
+[2017.06.21-22.31.19:513][134]LogModuleManager: Shutting down and abandoning module Kismet (368)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module ClassViewer (366)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module Toolbox (364)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module ModuleUI (362)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module MovieSceneTools (360)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module OutputLog (358)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module GammaUI (356)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module Documentation (354)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (352)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module MovieScene (350)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module Niagara (348)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module NiagaraEditor (347)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (344)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module AnalyticsET (342)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module PortalServices (340)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module PortalRpc (338)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module MessagingRpc (336)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module AIModule (334)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module GameplayDebugger (333)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module AITestSuite (331)
+[2017.06.21-22.31.19:514][134]LogModuleManager: Shutting down and abandoning module ProfilerService (328)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module TaskGraph (326)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module SteamVRController (324)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module SteamVR (322)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (320)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (318)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module OculusLibrary (316)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module OculusInput (314)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (312)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (310)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module CableComponent (308)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (306)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module AndroidPermission (304)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (300)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module HTML5Networking (298)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module AlembicImporter (296)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module AlembicLibrary (295)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module GeometryCache (294)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (293)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (288)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module SuperSearch (287)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (284)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module PluginBrowser (282)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (280)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (278)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module DesktopPlatform (277)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module UObjectPlugin (274)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (272)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (270)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module GitSourceControl (268)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module SourceControl (267)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (264)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (262)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (260)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module Paper2DEditor (258)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module MeshPaint (257)
+[2017.06.21-22.31.19:637][134]LogModuleManager: Shutting down and abandoning module LevelEditor (255)
+[2017.06.21-22.31.19:638][134]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (254)
+[2017.06.21-22.31.19:638][134]LogModuleManager: Shutting down and abandoning module MainFrame (252)
+[2017.06.21-22.31.19:638][134]LogModuleManager: Shutting down and abandoning module HotReload (251)
+[2017.06.21-22.31.19:638][134]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (246)
+[2017.06.21-22.31.19:638][134]LogModuleManager: Shutting down and abandoning module PhysXVehicles (244)
+[2017.06.21-22.31.19:638][134]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (242)
+[2017.06.21-22.31.19:638][134]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (240)
+[2017.06.21-22.31.19:638][134]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (238)
+[2017.06.21-22.31.19:638][134]LogModuleManager: Shutting down and abandoning module UdpMessaging (236)
+[2017.06.21-22.31.19:739][134]LogModuleManager: Shutting down and abandoning module TcpMessaging (234)
+[2017.06.21-22.31.19:839][134]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
+[2017.06.21-22.31.19:839][134]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
+[2017.06.21-22.31.19:839][134]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
+[2017.06.21-22.31.19:839][134]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
+[2017.06.21-22.31.19:839][134]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
+[2017.06.21-22.31.19:839][134]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module Paper2D (218)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module VREditor (204)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module UMG (192)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module Sequencer (190)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module AssetTools (188)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module MessageLog (187)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module Slate (178)
+[2017.06.21-22.31.19:840][134]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
+[2017.06.21-22.31.19:844][134]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
+[2017.06.21-22.31.19:844][134]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
+[2017.06.21-22.31.19:844][134]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
+[2017.06.21-22.31.19:844][134]LogModuleManager: Shutting down and abandoning module Networking (168)
+[2017.06.21-22.31.19:844][134]LogModuleManager: Shutting down and abandoning module Core (164)
+[2017.06.21-22.31.19:844][134]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
+[2017.06.21-22.31.20:137][134]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.06.21-22.31.20:137][134]LogDirectoryWatcher: A directory notification for 'H:/BookProjects/Hour_23/Hour_23/Content/' was aborted.
+[2017.06.21-22.31.20:137][134]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.06.21-22.31.20:137][134]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2017.06.21-22.31.20:139][134]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
+[2017.06.21-22.31.20:140][134]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
+[2017.06.21-22.31.20:140][134]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
+[2017.06.21-22.31.20:140][134]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
+[2017.06.21-22.31.20:140][134]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
+[2017.06.21-22.31.20:140][134]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
+[2017.06.21-22.31.20:140][134]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
+[2017.06.21-22.31.20:140][134]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
+[2017.06.21-22.31.20:140][134]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2017.06.21-22.31.20:581][134]LogDerivedDataCache: Shutdown
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2017.06.21-22.31.20:581][134]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module OculusRift (56)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module GearVRController (54)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module GearVR (52)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2017.06.21-22.31.20:582][134]LogOnline:Display: Unloading online subsystem: NULL
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2017.06.21-22.31.20:582][134]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2017.06.21-22.31.20:582][134]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.06.21-22.31.20:582][134]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BA59E102E-4849-42B5-3C1A-5CB336068164%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.1-3466753%2B%2B%2BUE4%2BRelease-4.16&UserID=8ae7d5fa4f7486a30978d59b4f147e43%7Ca3cbe5661c454bb4a082ec41ce73bf73%7Cc0d59f40-b27e-4a6a-9587-c49865568328&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.06.21-22.31.20:614][134]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2017.06.21-22.31.20:615][134]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
+[2017.06.21-22.31.20:615][134]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2017.06.21-22.31.20:615][134]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2017.06.21-22.31.20:615][134]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.06.21-22.31.20:615][134]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.06.21-22.31.20:615][134]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.06.21-22.31.20:615][134]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.06.21-22.31.20:615][134]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.06.21-22.31.20:616][134]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.06.21-22.31.20:616][134]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.06.21-22.31.20:616][134]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.06.21-22.31.20:616][134]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.06.21-22.31.20:616][134]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.06.21-22.31.20:616][134]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.06.21-22.31.20:616][134]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.06.21-22.31.20:616][134]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.06.21-22.31.20:616][134]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.06.21-22.31.20:616][134]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.06.21-22.31.20:617][134]LogExit: Exiting.
+[2017.06.21-22.31.20:629][134]Log file closed, 06/21/17 18:31:20
