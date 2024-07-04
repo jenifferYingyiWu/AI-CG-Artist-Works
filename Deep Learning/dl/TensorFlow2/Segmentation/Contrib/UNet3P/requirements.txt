@@ -1,7 +1,0 @@
-hydra-core
-opencv-python
-jupyter
-matplotlib
-tqdm
-nibabel
-numba

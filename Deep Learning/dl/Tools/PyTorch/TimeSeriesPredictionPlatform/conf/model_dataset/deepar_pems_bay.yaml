@@ -1,8 +1,0 @@
-dataset:
-  config:
-    train_samples: 1000000
-    MultiID: false
-    binarized: true
-trainer:
-  criterion:
-    _target_: criterion.GaussianLogLikelihood

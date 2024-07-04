@@ -1,5 +1,0 @@
-# SPDX-License-Identifier: Apache-2.0
-defaults:
-  - deployment: convert
-
-checkpoint: ???

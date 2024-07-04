@@ -1,9 +1,0 @@
-defaults:
-  - override hydra/launcher: multiprocessing
-
-task: 1
-
-hydra:
-  launcher:
-    # override the number of jobs for joblib
-    processes: 10
