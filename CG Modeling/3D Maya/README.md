@@ -22,4 +22,5 @@
 </p>
 
 #### His work has been featured in Annie-nominated, Emmy-winning, and Oscar short-listed short films. He's an animator and commercial director and he has created content for brands like LEGO, Braun, Nestle, and Anhueser-Busch. He recently worked at the birthplace of visual effects, Industrial Light & Magic where he worked on films by Michael Bay and Steven Spielberg and most recently on the record-breaking Avenger's: Infinity War as an animator
+
 #### He's eager to share his professional knowledge that has allowed him to make a career out of creating content for big brands and big movies.
